@@ -8,18 +8,19 @@
     android:padding="16dp">
 
     <!-- Layar Tampilan Angka -->
+
+    <!-- Grid Layout untuk tombol -->
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#EEEEEE"
-        android:layout_marginTop="250dp"
-        android:text="0"
-        android:textSize="50sp"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="0dp"
         android:gravity="end"
-        android:layout_marginBottom="0dp"/>
+        android:text="0"
+        android:textColor="#EEEEEE"
+        android:textSize="50sp" />
 
-    <!-- Grid Layout untuk tombol -->
     <GridLayout
         android:id="@+id/main"
         android:layout_width="wrap_content"
@@ -27,12 +28,25 @@
         android:layout_weight="1"
         android:columnCount="4"
         android:padding="0dp"
-        android:rowCount="5"
+        android:rowCount="6"
         android:useDefaultMargins="true">
 
         <!-- Tombol -->
         <Button
+            android:id="@+id/buttonDel"
             android:layout_row="0"
+            android:layout_column="3"
+            android:background="@drawable/button_del"
+            android:gravity="center"
+            android:minWidth="80dp"
+            android:minHeight="80dp"
+            android:text="⌫"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonAC"
+            android:layout_row="1"
             android:layout_column="0"
             android:background="@drawable/button_3col"
             android:gravity="center"
@@ -43,7 +57,8 @@
             android:textSize="24sp" />
 
         <Button
-            android:layout_row="0"
+            android:id="@+id/buttonPlusMinus"
+            android:layout_row="1"
             android:layout_column="1"
             android:background="@drawable/button_3col"
             android:gravity="center"
@@ -54,7 +69,8 @@
             android:textSize="24sp" />
 
         <Button
-            android:layout_row="0"
+            android:id="@+id/buttonPersen"
+            android:layout_row="1"
             android:layout_column="2"
             android:background="@drawable/button_3col"
             android:gravity="center"
@@ -65,7 +81,8 @@
             android:textSize="24sp" />
 
         <Button
-            android:layout_row="0"
+            android:id="@+id/buttonBagi"
+            android:layout_row="1"
             android:layout_column="3"
             android:background="@drawable/button_operator_style"
             android:gravity="center"
@@ -76,7 +93,8 @@
             android:textSize="24sp" />
 
         <Button
-            android:layout_row="1"
+            android:id="@+id/button7"
+            android:layout_row="2"
             android:layout_column="0"
             android:background="@drawable/button_number"
             android:gravity="center"
@@ -87,7 +105,8 @@
             android:textSize="24sp" />
 
         <Button
-            android:layout_row="1"
+            android:id="@+id/button8"
+            android:layout_row="2"
             android:layout_column="1"
             android:background="@drawable/button_number"
             android:gravity="center"
@@ -98,7 +117,8 @@
             android:textSize="24sp" />
 
         <Button
-            android:layout_row="1"
+            android:id="@+id/button9"
+            android:layout_row="2"
             android:layout_column="2"
             android:background="@drawable/button_number"
             android:gravity="center"
@@ -109,7 +129,8 @@
             android:textSize="24sp" />
 
         <Button
-            android:layout_row="1"
+            android:id="@+id/buttonKali"
+            android:layout_row="2"
             android:layout_column="3"
             android:background="@drawable/button_operator_style"
             android:gravity="center"
@@ -120,40 +141,8 @@
             android:textSize="24sp" />
 
         <Button
-            android:layout_row="2"
-            android:layout_column="0"
-            android:background="@drawable/button_operator_style"
-            android:gravity="center"
-            android:minWidth="80dp"
-            android:minHeight="80dp"
-            android:text="4"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp" />
-
-        <Button
-            android:layout_row="2"
-            android:layout_column="1"
-            android:background="@drawable/button_operator_style"
-            android:gravity="center"
-            android:minWidth="80dp"
-            android:minHeight="80dp"
-            android:text="5"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp" />
-
-        <Button
-            android:layout_row="2"
-            android:layout_column="2"
-            android:background="@drawable/button_operator_style"
-            android:gravity="center"
-            android:minWidth="80dp"
-            android:minHeight="80dp"
-            android:text="6"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp" />
-
-        <Button
-            android:layout_row="2"
+            android:id="@+id/buttonKurang"
+            android:layout_row="3"
             android:layout_column="3"
             android:background="@drawable/button_operator_style"
             android:gravity="center"
@@ -164,7 +153,8 @@
             android:textSize="24sp" />
 
         <Button
-            android:layout_row="2"
+            android:id="@+id/button4"
+            android:layout_row="3"
             android:layout_column="0"
             android:background="@drawable/button_number"
             android:gravity="center"
@@ -175,7 +165,8 @@
             android:textSize="24sp" />
 
         <Button
-            android:layout_row="2"
+            android:id="@+id/button5"
+            android:layout_row="3"
             android:layout_column="1"
             android:background="@drawable/button_number"
             android:gravity="center"
@@ -186,7 +177,8 @@
             android:textSize="24sp" />
 
         <Button
-            android:layout_row="2"
+            android:id="@+id/button6"
+            android:layout_row="3"
             android:layout_column="2"
             android:background="@drawable/button_number"
             android:gravity="center"
@@ -197,7 +189,8 @@
             android:textSize="24sp" />
 
         <Button
-            android:layout_row="3"
+            android:id="@+id/button2"
+            android:layout_row="4"
             android:layout_column="1"
             android:background="@drawable/button_number"
             android:gravity="center"
@@ -208,7 +201,8 @@
             android:textSize="24sp" />
 
         <Button
-            android:layout_row="3"
+            android:id="@+id/button3"
+            android:layout_row="4"
             android:layout_column="2"
             android:background="@drawable/button_number"
             android:gravity="center"
@@ -219,7 +213,8 @@
             android:textSize="24sp" />
 
         <Button
-            android:layout_row="3"
+            android:id="@+id/buttonTambah"
+            android:layout_row="4"
             android:layout_column="3"
             android:background="@drawable/button_operator_style"
             android:gravity="center"
@@ -230,7 +225,8 @@
             android:textSize="24sp" />
 
         <Button
-            android:layout_row="3"
+            android:id="@+id/button1"
+            android:layout_row="4"
             android:layout_column="0"
             android:background="@drawable/button_number"
             android:gravity="center"
@@ -242,7 +238,7 @@
 
         <!-- Baris terakhir dengan tombol "0" lebih besar -->
         <Button
-            android:layout_row="4"
+            android:layout_row="5"
             android:layout_column="0"
             android:background="@drawable/button_number"
             android:gravity="center"
@@ -253,7 +249,8 @@
             android:textSize="24sp" />
 
         <Button
-            android:layout_row="4"
+            android:id="@+id/button0"
+            android:layout_row="5"
             android:layout_column="1"
             android:background="@drawable/button_number"
             android:gravity="center"
@@ -264,7 +261,8 @@
             android:textSize="24sp" />
 
         <Button
-            android:layout_row="4"
+            android:id="@+id/buttonTitik"
+            android:layout_row="5"
             android:layout_column="2"
             android:background="@drawable/button_number"
             android:gravity="center"
@@ -275,7 +273,8 @@
             android:textSize="24sp" />
 
         <Button
-            android:layout_row="4"
+            android:id="@+id/buttonSamaDengan"
+            android:layout_row="5"
             android:layout_column="3"
             android:background="@drawable/button_operator_style"
             android:gravity="center"
