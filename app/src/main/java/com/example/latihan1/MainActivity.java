@@ -154,8 +154,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String formatNumber(double number) {
-        // Jika hasilnya bilangan bulat, tampilkan tanpa ".0"
-        if (number == (int) number) {
+        if (Math.abs(number) >= 1_000_000) { // Jika angka lebih besar dari 1 juta, gunakan notasi ilmiah
+            return String.format("%.6E", number);
+        } else if (number == (int) number) {
             return String.valueOf((int) number);
         } else {
             return String.valueOf(number);
